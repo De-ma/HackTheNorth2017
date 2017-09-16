@@ -40,7 +40,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l15-Zu-zhE">
-                                <rect key="frame" x="208" y="299" width="151" height="128"/>
+                                <rect key="frame" x="208" y="299" width="150" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -67,8 +67,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ykA-n1-ipx">
-                                <rect key="frame" x="16" y="299" width="151" height="128"/>
+                                <rect key="frame" x="16" y="299" width="150" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-Ug-WEi">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
@@ -78,6 +84,7 @@
                     </view>
                     <connections>
                         <outlet property="doorView" destination="l15-Zu-zhE" id="YAG-Xn-yiO"/>
+                        <outlet property="lightPhotoView" destination="eBe-Ug-WEi" id="q8s-Jm-U75"/>
                         <outlet property="lightView" destination="ykA-n1-ipx" id="eBc-hv-GZR"/>
                         <outlet property="view1" destination="J2Z-0U-vSX" id="iOb-5I-J2s"/>
                     </connections>

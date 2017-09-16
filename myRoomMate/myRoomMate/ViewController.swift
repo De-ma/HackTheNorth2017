@@ -13,15 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var doorView: UIView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var lightView: UIView!
+    
     var tapGesture1 = UITapGestureRecognizer()
     var tapGestureDoor = UITapGestureRecognizer()
     var tapGestureLight = UITapGestureRecognizer()
-
     
+    @IBOutlet weak var lightPhotoView: UIImageView!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.lightPhotoView.backgroundColor = UIColor(patternImage: UIImage(named: "light.png")!)
+        
         tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(ViewController.myviewTapped1(_:)))
         tapGesture1.numberOfTapsRequired = 1
         tapGesture1.numberOfTouchesRequired = 1
@@ -51,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     func myviewTappedDoor(_ sender: UITapGestureRecognizer) {
-        //What happens when view1 is tapped!
+        //What happens when doorview is tapped!
         if self.doorView.backgroundColor == UIColor.green {
             self.doorView.backgroundColor = UIColor.purple
         } else {
@@ -60,12 +64,8 @@ class ViewController: UIViewController {
     }
     
     func myviewTappedLight(_ sender: UITapGestureRecognizer) {
-        //What happens when view1 is tapped!
-        if self.lightView.backgroundColor == UIColor.red {
-            self.lightView.backgroundColor = UIColor.blue
-        } else {
-            self.lightView.backgroundColor = UIColor.red
-        }
+        //What happens when lightview is tapped!
+
     }
 
     override func didReceiveMemoryWarning() {

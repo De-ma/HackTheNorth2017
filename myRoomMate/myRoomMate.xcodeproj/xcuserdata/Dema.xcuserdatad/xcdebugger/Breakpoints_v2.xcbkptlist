@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myRoomMate/ViewController.swift"
-            timestampString = "527262747.766543"
+            timestampString = "527269816.875887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "myviewTapped1(_:)"
             landmarkType = "7">
          </BreakpointContent>
